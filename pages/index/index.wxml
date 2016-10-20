@@ -1,0 +1,9 @@
+<!-- 首页文章列表 -->
+<!-- <view class="page-header">
+  <text class="page-header-text">{{subtitle}}</text>
+</view>
+<template is="movie-list" data="{{ movies, loading, hasMore, loadMore }}"/> -->
+<text>{{title}}</text>
+<view wx:for="{{articles}}">
+  {{index}}: {{item.title}}
+</view>
