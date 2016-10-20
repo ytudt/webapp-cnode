@@ -1,0 +1,42 @@
+.clr:after,
+.clr:before {
+  content: "";
+  display: table
+}
+
+.clr:after {
+  clear: both
+}
+.articleList{
+  margin-bottom: 10rpx;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+}
+.nav{
+  overflow: hidden;
+  height: 70rpx;
+}
+.navList{
+  float: left;
+  width: 25%;
+  margin: 10rpx 0;
+  text-align: center;
+}
+.userPotraits{
+  width:60rpx;
+  height:60rpx;
+  /*display: block;*/
+  /*float: left;*/
+}
+.title{
+  width: 300rpx;
+  /*display: block;*/
+  /*float: left;*/
+}
+.createTime{
+  /*float: right;*/
+    display: block;
+    /*position: absolute;
+    right: 0;*/
+}

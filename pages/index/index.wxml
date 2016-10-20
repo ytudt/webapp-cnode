@@ -3,7 +3,18 @@
   <text class="page-header-text">{{subtitle}}</text>
 </view>
 <template is="movie-list" data="{{ movies, loading, hasMore, loadMore }}"/> -->
-<text>{{title}}</text>
-<view wx:for="{{articles}}">
-  {{index}}: {{item.title}}
+<!-- <text>{{title}}</text> -->
+<loading hidden="{{hiddenLoading}}" bindchange="loadingChange">
+    加载中...
+</loading>
+<view class="btn-area">
+  <navigator class="navList" url="navigate?title=navigate" hover-class="navigator-hover">问答</navigator>
+  <navigator class="navList" url="redirect?title=redirect" redirect hover-class="other-navigator-hover">分享</navigator>
+  <navigator class="navList" url="redirect?title=redirect" redirect hover-class="other-navigator-hover">工作</navigator>
+  <navigator url="redirect?title=redirect" redirect hover-class="other-navigator-hover">精华</navigator>
+</view>
+<view class="articleList"  wx:for="{{articles}}" catchtap="showDetail" data-item="{{item}}">
+<image class="userPotraits" src="{{item.author.avatar_url}}"></image>
+<text class="title">{{item.title}}</text>
+<text class="createTime">{{item.create_at}}</text>
 </view>
