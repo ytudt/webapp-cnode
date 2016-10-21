@@ -1,0 +1,11 @@
+/*.replyList{
+  border-bottom: 1px solid #ccc;
+}*/
+.userPotraits{
+  width:60rpx;
+  height:60rpx;
+}
+.replyList{
+  margin-bottom: 10rpx;
+  border-bottom: 1px solid #ccc;
+}

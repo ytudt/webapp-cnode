@@ -15,7 +15,7 @@
 }
 .nav{
   overflow: hidden;
-  height: 70rpx;
+  height: 90rpx;
 }
 .navList{
   float: left;
@@ -35,8 +35,9 @@
   /*float: left;*/
 }
 .createTime{
-  /*float: right;*/
+  float: right;
     display: block;
+    margin-right: 10rpx;
     /*position: absolute;
     right: 0;*/
 }

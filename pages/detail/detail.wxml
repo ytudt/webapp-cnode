@@ -1,1 +1,21 @@
-详情页
+<loading hidden="{{hiddenLoading}}" bindchange="loadingChange">
+    加载中...
+</loading>
+<text>{{article.title}}</text>
+<view>
+<text>{{article.loginname}}</text>
+<text>{{article.create_at}}</text>
+</view>
+<view>
+{{article.content}}
+</view>
+<view>
+<view wx:for="{{article.replies}}" class="replyList">
+  <text>{{item.author.loginname}}</text>
+  <image class="userPotraits" src="{{item.author.avatar_url}}"></image>
+  <view>
+    <text>{{item.content}}</text>>
+  </view>>
+</view>
+</view>
+
